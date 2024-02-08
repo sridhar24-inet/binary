@@ -1,0 +1,39 @@
+
+.card
+{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none !important;
+}
+section.main
+{
+    padding: 50px 0;
+}
+.form-group
+{
+    margin: 5px 0;
+}
+label
+{
+    margin-bottom: 5px;
+}
+ul, li, a
+{
+    list-style: none !important;
+    text-decoration: none;
+}
+a
+{
+    text-decoration: none !important;
+}
+section.main .menu-card ul li
+{
+padding: 10px;
+}
+section.main .menu-card ul
+{
+    padding-left: 0 !important;
+}
+section.main .menu-card ul li a i{margin-right: 10px;font-size: 13px;}
+section.main .menu-card ul li a{color: #252525;}
+section.main .menu-card ul li a.active{font-weight: 600;}
+section.main .menu-card ul li:hover {background-color: #f5f5f5;border-radius: 10px;font-weight: 600;}
