@@ -3,7 +3,7 @@
 require_once('../config/database.php');
 
 if (isset($_POST['submit'])) {
-    $profile_id = strtoupper(substr($_POST['father_name'], 0, 3) . substr($_POST['mother_name'], 0, 3)) . date("d", strtotime($_POST['dob'])) . rand(0, 100);
+    $profile_id = strtoupper(substr($_POST['father_name'], 0, 3) . substr($_POST['mother_name'], 0, 3)) . date("d", strtotime($_POST['dob'])) . rand(10, 99);
     $sponser_id = $_POST['sponser_id'];
     $sponser_name = $_POST['sponser_name'];
     $first_name = $_POST['first_name'];

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 08, 2024 at 02:20 PM
+-- Generation Time: Feb 12, 2024 at 01:31 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -71,11 +71,13 @@ CREATE TABLE `people` (
 --
 
 INSERT INTO `people` (`id`, `profile_id`, `sponser_id`, `sponser_name`, `placement_id`, `left_leg`, `right_leg`, `first_name`, `last_name`, `dob`, `father_name`, `mother_name`, `mobile_number`, `address`, `status`) VALUES
-(1, 'ADMIN01', 'ADMIN01', 'sadadasd', 'ADMIN01', 'FATGDG038', 'FATGDG161', 'FIRSTNAME', 'ADMIN01', '', 'ADMIN01', 'ADMIN01', '', '', '1'),
-(122, 'FATGDG038', 'ADMIN01', 'FIRSTNAME ADMIN01', 'ADMIN01', 'SFSFSF1053', '', 'dada', 'sdasdasd', '2024-02-03', 'fath', 'gdgd', '23424234', 'sfsfdsfd', '0'),
-(123, 'FATGDG161', 'ADMIN01', 'FIRSTNAME ADMIN01', 'ADMIN01', '', '', 'asdasdasd', 'asdasd', '2024-02-16', 'fath', 'gdgd', '23424234', 'asdadsad', '0'),
-(124, 'SFSFSF1053', 'ADMIN01', 'FIRSTNAME ADMIN01', 'FATGDG038', '', '', 'dada', 'dasdasd', '2024-02-10', 'sfs', 'fsfsf', '234234234', 'ssddfsf', '0'),
-(125, 'DFFSDF1144', 'SFSFSF1053', 'dada dasdasd', 'SFSFSF1053', '', '', 'sdadsasd', 'fgdgd', '2024-02-11', 'dffgdf', 'sdfsfsdf', '2345234234', 'sdfsdf', '0');
+(1, 'ADMIN01', 'ADMIN01', 'sadadasd', 'ADMIN01', 'SSASFG0915', 'SSASFG2429', 'FIRSTNAME', 'ADMIN01', '', 'ADMIN01', 'ADMIN01', '9876543210', '', '1'),
+(143, 'SSASFG0915', 'ADMIN01', 'FIRSTNAME ADMIN01', 'ADMIN01', 'SSAGDG1646', 'SSA4641619', 'gdfgdfg', 'dasdasd', '2024-02-09', 'ssasssss', 'sfgsfdsf', '353535', 'dghh', '0'),
+(144, 'SSASFG2429', 'ADMIN01', 'FIRSTNAME ADMIN01', 'ADMIN01', '5EGGDF2219', 'FSDSFG2189', 'dfgd', 'dfgdfg', '2024-02-24', 'ssasssss', 'sfgsfdsf', '3535345', 'hertert', '0'),
+(145, '5EGGDF2219', 'SSASFG2429', 'dfgd dfgdfg', 'SSASFG2429', '', '', 'gdfgdfg', 'dasdasd', '2024-02-22', '5egdgd', 'gdfgdgdg', '34534534534', 'dgdggdg', '0'),
+(147, 'SSAGDG1646', 'ADMIN01', 'FIRSTNAME ADMIN01', 'SSASFG0915', '', '', 'gdfgdfg', 'dasdasd', '2024-02-16', 'ssasssss', 'gdgd', '456456456', 'tdgfdgdfg', '0'),
+(148, 'SSA4641619', 'ADMIN01', 'FIRSTNAME ADMIN01', 'SSASFG0915', '', '', 'gdfgdfg', 'dasdasd', '2024-02-16', 'ssasssss', '46466456', '45645646456', 'ryyry', '0'),
+(149, 'FSDSFG2189', 'ADMIN01', 'FIRSTNAME ADMIN01', 'SSASFG2429', '', '', 'dfgd', 'dasdasd', '2024-02-21', 'fsdfsdf', 'sfgsfdsf', '456456456', 'sdfsfsdf', '0');
 
 --
 -- Indexes for dumped tables
@@ -107,7 +109,7 @@ ALTER TABLE `leg_allocation`
 -- AUTO_INCREMENT for table `people`
 --
 ALTER TABLE `people`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=150;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

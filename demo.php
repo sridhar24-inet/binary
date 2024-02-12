@@ -1,92 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Binary Tree CSS</title>
-<style>
-    /* Styles for the tree */
-    .tree {
-        display: flex;
-        justify-content: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+  margin: 0 auto;
+  
+}
 
-    .node {
-        width: 50px;
-        height: 50px;
-        background-color: lightblue;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 50px;
-        position: relative;
-        margin: 0 20px;
-    }
+:root {
+  --main-value: 200px;
+}
 
-    .node::before {
-        content: '';
-        position: absolute;
-        top: -30px;
-        left: 50%;
-        width: 0;
-        height: 30px;
-        border-left: 2px solid black;
-    }
+html {
+  background-color: grey;
+}
 
-    .node.left::before {
-        transform: translateX(-50%);
-    }
+.container {
+  margin: 20px;
+}
 
-    .node.right::before {
-        transform: translateX(-50%) rotate(180deg);
-    }
 
-    /* Styles for tree connectors */
-    .connector {
-        position: absolute;
-        border-left: 2px solid black;
-        height: 50px;
-    }
+.main-sqare {
+  position: relative;
+  width: var(--main-value);
+  height: var(--main-value);
+  background: linear-gradient(135deg, rgba(150,100,188,1) 0%, rgba(104,70,171,1) 50%, rgba(57,39,154,1) 100%);
+}
 
-    .connector.left {
-        left: 0;
-        top: 0;
-        transform: translateX(25px);
-    }
+.square-cover {
+  position: absolute;
+  width: calc(var(--main-value) - 5px);
+  height: calc(var(--main-value) - 5px);
+  background-color: grey;
+  left: 2.5%;
+}
 
-    .connector.right {
-        right: 0;
-        top: 0;
-        transform: translateX(-25px);
-    }
-</style>
+.bottom-main-sqare {
+  position: relative;
+  width: var(--main-value);
+  height: var(--main-value);
+  background: linear-gradient(45deg, rgba(150,100,188,1) 0%, rgba(104,70,171,1) 50%, rgba(57,39,154,1) 100%);
+}
+
+.bottom-square-cover {
+  position: absolute;
+  width: calc(var(--main-value) - 5px);
+  height: var(--main-value);
+  background-color: grey;
+  left: 2.5%;
+}
+
+    </style>
 </head>
 <body>
-    <div class="tree">
-        <div class="node">
-            1
-            <div class="connector left"></div>
-            <div class="connector right"></div>
-        </div>
-        <div class="node left">
-            2
-            <div class="connector left"></div>
-            <div class="connector right"></div>
-        </div>
-        <div class="node right">
-            3
-            <div class="connector left"></div>
-            <div class="connector right"></div>
-        </div>
-        <div class="node left">
-            4
-            <div class="connector left"></div>
-            <div class="connector right"></div>
-        </div>
-        <div class="node right">
-            5
-            <div class="connector left"></div>
-            <div class="connector right"></div>
-        </div>
+<div class="container">
+    <div class="main-sqare">
+      <div class="square-cover"></div>
     </div>
+    <div class="bottom-main-sqare">
+      <div class="bottom-square-cover"></div>
+    </div>
+</div>
 </body>
 </html>
